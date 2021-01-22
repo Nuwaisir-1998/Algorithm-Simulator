@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="709.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.GraphController">
+   <children>
+      <Line endX="80.0" endY="86.0" layoutX="322.0" layoutY="110.0" />
+      <Line endX="-85.0" endY="90.0" layoutX="321.0" layoutY="111.0" />
+      <Line endX="115.0" endY="85.0" layoutX="403.0" layoutY="197.0" />
+      <Line endX="-25.0" endY="100.0" layoutX="401.0" layoutY="197.0" />
+      <Line endX="50.0" endY="100.0" layoutX="236.0" layoutY="201.0" />
+      <Line endX="-50.0" endY="80.0" layoutX="236.0" layoutY="201.0" />
+      <Line endX="-35.0" endY="192.0" layoutX="322.0" layoutY="110.0" />
+      <Line endX="-65.0" endY="85.0" layoutX="184.0" layoutY="282.0" />
+      <Line endY="60.0" layoutX="287.0" layoutY="303.0" />
+      <Text fx:id="tx1" fill="#19b208" layoutX="281.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="tx3" fill="#19b208" layoutX="179.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="26.414216505363584">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="tx2" fill="#19b208" layoutX="402.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="tx4" fill="#19b208" layoutX="152.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="tx9" fill="#19b208" layoutX="94.0" layoutY="344.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="tx7" fill="#19b208" layoutX="298.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="tx6" fill="#19b208" layoutX="391.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="tx8" fill="#19b208" layoutX="309.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="tx5" fill="#19b208" layoutX="508.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="source" alignment="CENTER" layoutX="100.0" layoutY="44.0" prefHeight="25.0" prefWidth="36.0" text="1" />
+      <TextField fx:id="end" alignment="CENTER" layoutX="223.0" layoutY="44.0" prefHeight="25.0" prefWidth="42.0" text="9" />
+      <Text layoutX="30.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Start Node:" wrappingWidth="66.4142138659954" />
+      <Text layoutX="155.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="End Node:" />
+      <Button layoutX="305.0" layoutY="444.0" mnemonicParsing="false" onAction="#startBFS" text="Start BFS!" />
+      <TextField layoutX="90.0" layoutY="409.0" prefHeight="31.0" prefWidth="95.0" text="Shortest Path : " />
+      <Text fx:id="res" fill="#780c90" layoutX="192.0" layoutY="434.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="36.41421617567539">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="d13" layoutX="254.0" layoutY="158.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
+      <Text fx:id="d17" layoutX="306.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25" />
+      <Text fx:id="d34" layoutX="203.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4" />
+      <Text fx:id="d12" layoutX="369.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9" />
+      <Text fx:id="d49" layoutX="136.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
+      <Text fx:id="d26" layoutX="393.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7" />
+      <Text fx:id="d25" layoutX="457.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="19" />
+      <Text fx:id="d78" layoutX="295.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2" />
+      <Text fx:id="d37" layoutX="264.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18" />
+      <Button layoutX="397.0" layoutY="444.0" mnemonicParsing="false" onAction="#startDijkstra" text="Start Dijkstra!" />
+      <Button layoutX="551.0" layoutY="65.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+      <Circle fx:id="c3" fill="DODGERBLUE" layoutX="235.0" layoutY="202.0" opacity="0.59" radius="11.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Button fx:id="n3" layoutX="214.0" layoutY="181.0" mnemonicParsing="false" onAction="#f" prefHeight="42.0" prefWidth="42.0" style="-fx-background-radius: 200; -fx-background-color: #ff9f19;" text="3">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Circle fx:id="c1" fill="DODGERBLUE" layoutX="321.0" layoutY="112.0" opacity="0.59" radius="11.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fx:id="c2" fill="DODGERBLUE" layoutX="402.0" layoutY="196.0" opacity="0.59" radius="11.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fx:id="c7" fill="DODGERBLUE" layoutX="287.0" layoutY="302.0" opacity="0.59" radius="11.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fx:id="c6" fill="DODGERBLUE" layoutX="375.0" layoutY="298.0" opacity="0.59" radius="11.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fx:id="c4" fill="DODGERBLUE" layoutX="185.0" layoutY="283.0" opacity="0.59" radius="11.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fx:id="c9" fill="DODGERBLUE" layoutX="118.0" layoutY="368.0" opacity="0.59" radius="11.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fx:id="c5" fill="DODGERBLUE" layoutX="519.0" layoutY="283.0" opacity="0.59" radius="11.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fx:id="c8" fill="DODGERBLUE" layoutX="286.0" layoutY="364.0" opacity="0.59" radius="11.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Button fx:id="n8" layoutX="265.0" layoutY="343.0" mnemonicParsing="false" onAction="#f" prefHeight="42.0" prefWidth="42.0" style="-fx-background-radius: 200; -fx-background-color: #ff9f19;" text="8">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="n7" layoutX="267.0" layoutY="281.0" mnemonicParsing="false" onAction="#f" prefHeight="42.0" prefWidth="42.0" style="-fx-background-radius: 200; -fx-background-color: #ff9f19;" text="7">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="n4" layoutX="162.0" layoutY="262.0" mnemonicParsing="false" onAction="#f" prefHeight="42.0" prefWidth="42.0" style="-fx-background-radius: 200; -fx-background-color: #ff9f19;" text="4">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="n9" layoutX="97.0" layoutY="347.0" mnemonicParsing="false" onAction="#f" prefHeight="42.0" prefWidth="42.0" style="-fx-background-radius: 200; -fx-background-color: #ff9f19;" text="9">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="n5" layoutX="498.0" layoutY="260.0" mnemonicParsing="false" onAction="#f" prefHeight="42.0" prefWidth="42.0" style="-fx-background-radius: 200; -fx-background-color: #ff9f19;" text="5">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="n6" layoutX="354.0" layoutY="277.0" mnemonicParsing="false" onAction="#f" prefHeight="42.0" prefWidth="42.0" style="-fx-background-radius: 200; -fx-background-color: #ff9f19;" text="6">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="n1" layoutX="300.0" layoutY="89.0" mnemonicParsing="false" onAction="#f" prefHeight="42.0" prefWidth="42.0" style="-fx-background-radius: 200; -fx-background-color: #ff9f19;" text="1">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="n2" layoutX="378.0" layoutY="175.0" mnemonicParsing="false" onAction="#f" prefHeight="42.0" prefWidth="42.0" style="-fx-background-radius: 200; -fx-background-color: #ff9f19;" text="2">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Circle fx:id="cc3" fill="#1cff6f" layoutX="235.0" layoutY="202.0" opacity="0.0" radius="21.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fx:id="cc1" fill="#1cff6f" layoutX="321.0" layoutY="110.0" opacity="0.0" radius="21.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fx:id="cc4" fill="#1cff6f" layoutX="183.0" layoutY="283.0" opacity="0.0" radius="21.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fx:id="cc7" fill="#1cff6f" layoutX="288.0" layoutY="302.0" opacity="0.01" radius="21.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fx:id="cc2" fill="#1cff6f" layoutX="399.0" layoutY="196.0" opacity="0.0" radius="21.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fx:id="cc8" fill="#1cff6f" layoutX="286.0" layoutY="364.0" opacity="0.0" radius="21.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fx:id="cc9" fill="#1cff6f" layoutX="118.0" layoutY="368.0" opacity="0.0" radius="21.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fx:id="cc6" fill="#1cff6f" layoutX="375.0" layoutY="298.0" opacity="0.0" radius="21.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fx:id="cc5" fill="#1cff6f" layoutX="519.0" layoutY="281.0" opacity="0.0" radius="21.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
